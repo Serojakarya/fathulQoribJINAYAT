@@ -1,0 +1,638 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum Jinayat (Pidana)</a></li>
+    <li><a href="2.html">2. Diyat (Denda Pidana Pembunuhan atau Penyerangan)</a></li>
+    <li><a href="3.html">3. Qasamah (Tuduhan Pelaku Pembunuhan)</a></li>
+
+</ul>
+
+</div>
+
+
+<h1>BAB DIYAT</h1><br/><br/>
+
+
+
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+
+فصل: في بيان الدية وهي المال الواجب بالجناية على حر في نفس أو طرف (والدية على ضربين مغلظة ومخففة) ولا ثالث لهما (فالمغلظة) بسبب قتل الذكر الحر المسلم عمداً (مائة من الإبل) والمائة مثلثة (ثلاثون حقة وثلاثون جذعة) وسبق معناهما في كتاب الزكاة (وأربعون خلفة) بفتح الخاء المعجمة وكسر اللام وبالفاء وفسرها المصنف بقوله (في بطونها أولادها) والمعنى أن الأربعين حوامل ويثبت حملها بقول أهل الخبرة بالإبل (والمخففة) بسبب قتل الذكر الحر المسلم (مائة من الإبل) والمائة مخمسة (عشرون حقة وعشرون جذعة وعشرون بنت لبون وعشرون ابن لبون وعشرون بنت مخاض) ومتى وجبت للإبل على قاتل أو عاقلة أخذت من إبل من وجبت عليه، وإن لم يكن له إبل فتؤخذ من غالب إبل بلدة بلدي، أو قبيلة بدوي فإن لم يكن في البلدة أو القبيلة إبل فتؤخذ من غالب إبل أقرب البلاد إلى موضع المؤدي (فإن عدمت الإبل انتقل إلى قيمتها) وفي نسخة أخرى فإن أعوزت الإبل انتقل إلى قيمتها هذا ما في القول الجديد وهو الصحيح (وقيل) في القديم (ينتقل إلى ألف دينار) في حق أهل الذهب (أو) ينتقل إلى (اثني عشر ألف درهم) في حق أهل الفضة، وسواء فيما ذكر الدية المغلظة والمخففة (وإن غلظت) على القديم (زيد عليها الثلث) أي قدره ففي الدنانير ألف وثلاثمائة وثلاثة وثلاثون ديناراً وثلث دينار، وفي الفضة ستة عشر ألف درهم (وتغلظ دية الخطأ في ثلاثة مواضع) أحدها (إذا قتل في الحرم) أي حرم مكة أما القتل في حرم المدينة أو القتل في حال الإحرام، فلا تغلظ فيه على الأصح،
+<br/><br/>
+والثاني مذكور في قول المصنف (أو قتل في الأشهر الحرم) أي ذي القعدة وذي الحجة، والمحرم ورجب والثالث مذكور في قوله (أو قتل) قريباً له (ذا رحم محرم) بسكون المهملة فإن لم يكن الرحم محرماً له كبنت العم فلا تغليظ في قتلها (ودية المرأة) والخنثى المشكل (على النصف من دية الرجل) نفساً وجرحاً، ففي دية حرة مسلمة في قتل عمد أو شبه عمد خمسون من الإبل خمسة عشر حقة، وخمسة عشر جذعة وعشرون خلفة إبلاً حوامل، وفي قتل خطأ عشر بنات مخاض وعشر بنات لبون وعشر بني لبون، وعشر حقاق وعشر جذاع (ودية اليهودي والنصراني) والمستأمن والمعاهد (ثلث دية المسلم) نفساً وجرحاً. (وأما المجوسي ففيه ثلثا عشر دية المسلم) وأخصر منه ثلث خمس دية المسلم (وتكمل دية النفس) وسبق أنها مائة من الإبل (في قطع) كل من (اليدين والرجلين) فيجب في كل يد أو رجل خمسون من الإبل، وفي قطعهما مائة من الإبل (و) تكمل الدية في قطع (الأنف) أي في قطع ما لان منه وهو المارن، وفي قطع كل من طرفيه والحاجز ثلث دية
+<br/><br/>
+و تكمل الدية في قطع (الأذنين) أو قلعهما بغير إيضاح، فإن حصل مع قلعهما إيضاح وجب أرشه، وفي كل أذن نصف دية، ولا فرق فيما ذكر بين أذن السميع وغيره، ولو أيبس الأذنين بجناية عليهما ففيهما دية (والعينين) وفي كل منهما نصف دية وسواء في ذلك عين أحول أو أعور أو أعمش (و) في (الجفون الأربعة) في كل جفن منها ربع دية (واللسان) لناطق سليم الذوق ولو كان اللسان لألثغ وأرتّ (والشفتين) وفي قطع إحداهما نصف دية (وذهاب الكلام) كله وفي ذهاب بعضه بقسطه من الدية والحروف التي توزع الدية عليها ثمانية وعشرون حرفاً في لغة العرب. (وذهاب البصر) أي إذهابه من العينين أما إذهابه من إحداهما ففيه نصف دية، ولا فرق في العين بين صغيرة وكبيرة، وعين شيخ وطفل (وذهاب السمع) من الأذنين وإن نقص من أذن واحدة سدت، وضبط منتهى سماع الأخرى، ووجب قسط التفاوت وأخذ بنسبته من تلك الدية (وذهاب الشم) من المنخرين وإن نقص الشم وضبط قدره وجب قسطه من الدية، وإلا فحكومة (وذهاب العقل) فإن زال بجرح على الرأس له أرش مقدر أو حكومة وجبت الدية مع الأرش (والذكر) السليم ولو ذكر صغير وشيخ وعنين، وقطع الحشفة كالذكر ففي قطعها وحدها دية (والأنثيين) أي البيضتين، ولو من عنين ومجبوب وفي قطع إحداهما نصف دية
+<br/><br/>
+وفي الموضحة- من الذكر الحر المسلم (و) في (السن) منه (خمس من الإبل وفي) إذهاب (كل عضو لا منفعة فيه حكومة) وهي جزء من الدية نسبته إلى دية النفس نسبة نقصها أي الجناية من قيمة المجني عليه لو كان رقيقاً بصفاته التي هو عليها، فلو كانت قيمة المجني عليه بلا جناية على يده مثلاً عشرة، وبدونها تسعة فالنقص عشر، فيجب عشر دية النفس. (ودية العبد) المعصوم (قيمته) والأمة كذلك ولو زادت قيمة كل منهما على دية الحر، ولو قطع ذكر عبد وأنثياه وجب قيمتان في الأظهر (ودية الجنين الحر) المسلم تبعاً لأحد أبويه إن كانت أمة معصومة حال الجناية (غرة) أي نسمة من الرقيق (عبد أو أمة) سليم من عيب مبيع، ويشترط بلوغ الغرة نصف عشر الدية، فإن فقدت الغرة وجب بدلها وهو خمسة أبعرة، وتجب الغرة على عاقلة الجاني (ودية الجنين الرقيق عشر قيمة أمه) يوم الجناية عليها، ويكون ما وجب لسيدها ويجب في الجنين اليهودي أو النصراني غرة، كثلث غرة مسلم وهو بعير وثلثا بعير.
+
+
+</font></div>
+
+<hr><br/>
+
+
+<b><center>Pengertian Diyat</b></center>
+
+<p>(Fasal) menjelaskan tentang diyat.</p>
+
+<p>Diyat adalah harta yang wajib dibayar sebab telah melukai orang merdeka baik nyawa atau anggota badan.</p><br/>
+
+<b><center>Pembagian Diyat</b></center>
+
+<p>Diyat ada dua macam, mughaladhah (yang berat) dan mukhaffah (yang ringan), dan tidak ada yang ketiga.</p>
+
+<p>Diyat mughallah, sebab membunuh laki-laki merdeka yang beragama islam dengan sengaja, adalah seratus ekor onta.</p>
+
+<p>Seratus onta tersebut dibagi tiga. Tiga puluh ekor berupa onta hiqqah. Tiga puluh ekor berupa onta jadz’ah. Pengertian kedua onta ini telah dijelaskan di dalam kitab “ZAKAT”. Dan empat puluh ekor berupa onta khalifah. Lafadz khalifah dengan membaca fathah huruf kha’nya yang diberi titik satu di atas, membaca kasrah huruf lamnya, dan menggunakan huruf fa’.</p>
+
+<p>Mushannif menafsiri onta khalifah tersebut dengan perkataan beliau, “di dalam perut onta tersebut terdapat anaknya.”</p>
+
+<p>Yang dikehendaki, empat puluh ekor onta tersebut adalah onta-onta yang sedang hamil. Kehamilan onta tersebut bisa ditetapkan dengan ucapan pakar ahli tentang onta.</p>
+
+<p>Diyat mukhaffah sebab membunuh laki-laki merdeka yang muslim adalah seratus ekor onta.</p>
+
+<p>Seratus dibagi lima. Dua puluh ekor berupa onta hiqqah, dua puluh ekor berupa onta jadz’ah, dua puluh ekor berupa onta bintu labun, dua puluh ekor berupa onta ibn labun, dan dua puluh ekor berupa onta bintu makhadl.</p><br/>
+
+<b><center>Proses Pengambilan Diyat</b></center>
+
+<p>Ketika onta wajib dibayar oleh si pembunuh atau waris ‘aqilah, maka onta diambil dari ontanya orang yang wajib membayarnya.</p>
+
+<p>Jika ia tidak memiliki onta, maka diambilkan dari onta yang paling banyak di kota orang yang hidup di perkotaan, atau pedukuan orang yang hidup di pedesaan.</p>
+
+<p>Jika di kota atau desa tersebut tidak ada onta, maka diambilkan dari onta yang paling banyak di kota atau desa yang paling dekat dengan tempat orang yang wajib membayar diyat.</p>
+
+<p>Kemudian, ketika tidak ada onta, maka ia beralih mengeluarkan uang seharga onta tersebut.</p>
+
+<p>Dalam redaksi yang laing disebutkan, “jika onta tidak ditemukan, maka beralih mengeluarkan uang seharga onta tersebut.”</p>
+
+<p>Ini adalah pendapat di dalam qaul jadid, dan ini adalah pendapat ash shahih.</p>
+
+<p>Ada satu pendapat di dalam qaul qadim yang mengatakan, “beralih mengeluarkan seribu dinar, bagi orang yang memiliki emas.</p>
+
+<p>Atau beralih membayar dua belas ribu dirham, bagi orang yang memiliki perak.</p>
+
+<p>Di dalam semua yang dijelaskan tersebut baik diyat al mughaladhdhah atau diyat al mukhaffah.</p>
+
+<p>Berdasarkan pendapat qaul qadim, jika diyat tersebut diberatkan / mughaladhdhah, maka ditambah sepertiga dari jumlah semuanya.</p>
+
+<p>Sehingga, dalam permasalahan dinar, harus membayar seribu tiga ratus tiga puluh tiga lebih sepertiga dinar.</p>
+
+<p>Dan di dalam permasalahan perak, harus membayar enam belas ribu dirham.</p>
+
+<p>Diyat Khatha’ Yang Mughaladhah (Diyat karena Salah Berat)</p>
+
+<p>Diyat pembunuhan khatha’ menjadi berat / mughaladhdhah di dalam tiga tempat.</p>
+
+<p>Salah satunya, ketika membunuh di tanah Haram, maksudnya tanah Haram Makkah.</p>
+
+<p>Adapun pembunuhan yang dilakukan di tanah Haram Madinah, atau membunuh saat melaksanakan ihram, maka tidak sampai memberatkan diyat menurut pendapat al ashah.</p>
+
+<p>Yang kedua dijelaskan di dalam perkataan mushannif,</p>
+
+<p>Atau membunuh di bulan-bulan Haram, maksudnya bulan Dzul Qa’dah, Dzul Hijjah, Muharram, dan Rajab.</p>
+
+<p>Yang ketiga disebutkan di dalam perkataan mushannif,</p>
+
+<p>Atau membunuh kerabat sendiri yang masih memiliki ikatan mahram. Lafadz “mahram” dengan membaca sukun huruf ha’nya yang tidak diberi titik.</p>
+
+<p>Sehingga, jika kerabat yang dibunuh tersebut bukan mahramnya, maka tidak sampai memberatkan diyat.</p><br/>
+
+<b><center>Diyatnya Wanita dan Khuntsa<sup>1</sup></b></center>
+
+<p>Diyat melukai wanita dan khuntsa musykil adalah separuh dari diyat melukai laki-laki, baik membunuh atau melukai saja.</p>
+
+<p>Sehingga, di dalam diyatnya wanita merdeka yang muslim dalam permasalahan membunuh secara sengaja atau syibih ‘amdin adalah lima puluh ekor onta -yang dibagi menjadi tiga-. Lima belas onta hiqqah, lima belas onta jadz’ah dan dua puluh onta khalifah yang sedang mengandung.</p>
+
+<p>Dan di dalam membunuh khatha’, wajib membayar sepuluh ekor onta bintu makhadl, sepuluh ekor onta bintu labun, sepuluh ekor ibn labun, sepuluh ekor onta hiqqah dan sepuluh ekor onta jadz’ah.</p><Br/>
+
+<b><center>Diyyat Orang Kafir</b></center>
+
+<p>Diyatnya orang yahudi, nasrani, kafir musta’man, dan kafir mu’ahad adalah sepertiga diyatnya orang islam, baik membunuh atau melukai saja.</p>
+
+<p>Adapun orang majusi, maka diyatnya adalah dua sepertiga sepersepuluhnya diyat orang muslim.</p>
+
+<p>Ungkapan yang lebih ringkas daripada ini adalah sepertiga seperlima diyatnya orang muslim.</p><Br/>
+
+<b><center>Diyat Melukai</b></center>
+
+<p>Wajib membayar diyat nafsi secara sempurna, dan sudah dijelaskan bahwa sesungguhnya diyat tersebut adalah seratus onta, di dalam kasus memotong masing-masing dari kedua tangan dan kedua kaki.</p>
+
+<p>Sehingga di dalam setiap satu tangan atau kaki, wajib membayar lima puluh onta. Dan di dalam kasus memotong dua tangan atau kaki, wajib membayar seratus onta.</p>
+
+<p>Wajib membayar diyat secara utuh di dalam kasus hidung, maksudnya memotong bagian hidung yang lentur, yaitu janur hidung.</p>
+
+<p>Dan di dalam kasus memotong satu dari kedua bagian tepi janur hidung dan pembatas dua lubangnya, wajib membayar sepertiga diyat.</p>
+
+<p>Wajib membayar diyat secara utuh/ sempurna di dalam kasus memotong atau mencabut kedua telinga yang tidak sampai menampakkan tulang yang berada di baliknya.</p>
+
+<p>Jika pencabutan keduanya sampai menyebabkan terlihatnya bagian tulang di baliknya, maka juga wajib membayar ursyu-nya (ganti rugi hal itu).</p>
+
+<p>Di dalam memotong satu daun telinga, wajib membayar separuh diyat.</p>
+
+<p>Penjelasan di atas tidak ada bedanya antara telinga orang yang bisa mendengar atau bukan.</p>
+
+<p>Seandainya kedua telinga tidak bisa digerakkan lagi sebab dilukai, maka keduanya berhak mendapatkan ganti rugi diyat.</p>
+
+<p>-wajib membayar diyat secara utuh- di dalam kasus kedua mata. Dalam kasus melukai salah satunya, wajib membayar separuh diyat.</p>
+
+<p>Dalam hal itu baik matanya orang yang juling, yang tidak bisa melihat salah satu matanya, atau yang selalu berair.</p>
+
+<p>Dan wajib membayar -diyat secara utuh- di dalam kasus kelopak mata yang berjumlah empat buah. Masing-masing dari ke empatnya berhak mendapatkan ganti rugi seperempat diyat.</p>
+
+<p>Dan wajib membayar -diyat secara utuh- dalam kasus lidah yang bisa bicara dan sehat perasanya, walaupun lidahnya orang yang gagap dan orang yang tidak jelas kata-katanya.</p>
+
+<p>Dan wajib membayar -diyat secara utuh- dalam kasus kedua bibir. Di dalam kasus memotong salah satunya, wajib membayar separuh diyat.</p>
+
+<p>Dan wajib membayar -diyat secara utuh- dalam kasus hilangnya kemampuan bicara seluruhnya. Dan di dalam kasus hilangnya kemampuan bicara sebagian saja, wajib membayar diyat sesuai dengan prosentase yang hilang.</p>
+
+<p>Huruf yang menjadi tolak ukur pembagian diyat sebanyak dua puluh delapan huruf di dalam bahasa arab.</p>
+
+<p>Dan di dalam kasus hilangnya penglihatan, maksudnya menghilangkan penglihatan dari kedua mata.</p>
+
+<p>Adapun menghilangkan penglihatan dari salah satunya, maka wajib membayar separuh diyat.</p>
+
+<p>Di dalam kasus mata, tidak ada perbedaan antara mata yang kecil dan yang besar, antara mata orang tua dan anak kecil.</p>
+
+<p>Dan wajib membayar -diyat secara utuh- dalam kasus hilangnya pendengaran dari kedua telinga.</p>
+
+<p>Jika daya pendengaran kurang dari satu telinga saja, maka telinga tersebut ditutup dan dibatasi seberapa daya pendengaran telinga yang satunya, maka perbedaan diantara kedua telinga tersebut wajib diberi ganti rugi dan diambilkan sebagian dari diyat tersebut dengan mempertimbangkan perbandingan yang hilang dan yang masih ada.</p>
+
+<p>Dan wajib membayar -diyat secara utuh- dalam kasus hilangnya daya penciuman dari kedua lubang hidung.</p>
+
+<p>Jika daya penciuman berkurang dan kira-kiranya bisa dibatasi, maka wajib membayar kadar kekurangan tersebut dari sebagian diyat secara utuh. Jika tidak bisa dibatasi, maka wajib membayar diyat hukumah.</p>
+
+<p>Dan wajib membayar -diyat secara utuh- dalam kasus hilangnya akal. Sehingga, jika akal hilang sebab luka pada kepala dengan bentuk luka yang menetapkan ursy (ganti rugi) atau diyat hukumah, maka wajib membayar diyat sekaligus ursy-nya.</p>
+
+<p>Dan wajib membayar -diyat secara utuh- dalam kasus penis yang masih berfungsi, walaupun penisnya anak kecil, lansia dan lelaki imponten.</p>
+
+<p>Memotong hasyafah sama seperti memotong penis. Sehingga wajib membayar diyat secara utuh sebab hanya memotong hasyafah saja.</p>
+
+<p>Dan wajib membayar -diyat secara utuh- dalam kasus kedua pelir, walaupun miliknya lelaki impoten dan orang yang dipotong penisnya.</p>
+
+<p>Wajib membayar separuh diyat sebab memotong salah satu dari keduanya.</p>
+
+<p>Wajib membayar lima onta di dalam kasus mudlihah terhadap lelaki muslim yang merdeka, dan dalam kasus giginya.</p>
+
+<p>Dan wajib membayar hukumah di dalam kasus menghilangkan setiap anggota yang tidak memiliki manfaat.</p>
+
+<p>Hukumah adalah bagian dari diyat, yang mana nisbat bagian tersebut pada diyatnya nyawa adalah nisbat kurangnya harga korban yang dilukai seandainya ia adalah seorang budak dengan sifat-sifat yang ia miliki.</p>
+
+<p>Sehingga, seandainya harga korban sebelum dilukai tangannya semisal sepuluh, dan setelah dilukai menjadi sembilan, maka kurangnya adalah sepersepuluh, sehingga wajib membayar sepersepuluh dari diyatnya nyawa secara utuh.</p><br/>
+
+<b><center>Diyatnya Budak</b></center>
+
+<p>Diyat seorang budak laki-laki yang dilindungi adalah harga budak tersebut, begitu juga diyat budak perempuan, walaupun harga keduanya lebih dari diyatnya orang merdeka.</p>
+
+<p>Seandainya penis dan kedua pelir seorang hamba dipotong, maka wajib mengganti dua harga menurut pendapat al adhhar.</p><br/>
+
+<b><center>Diyat Janin</b></center>
+
+<p>Diyat janin merdeka yang berstatus islam karena mengikut pada salah satu kedua orang tuanya, jika ibunya adalah wanita yang terjaga saat terjadinya kasus, adalah ghurrah, maksudnya satu orang budak, laki-laki atau perempuan, yang bebas dari cacat yang parah.</p>
+
+<p>Budak tersebut disyaratkan harus mencapai separuh sepersepuluhnya diyat secara utuh.</p>
+
+<p>Kemudian, jika tidak ada budak, maka wajib membayar gantinya yaitu lima ekor onta.</p>
+
+<p>Budak tersebut wajib dibayar oleh waris ‘aqilah si pelaku.</p>
+
+<p>Diyat janin yang berstatus budak adalah sepersepuluh dari harga ibunya di hari saat sang ibu dilukai.</p>
+
+<p>Sesuatu yang wajib dibayarkan menjadi milik majikan si ibu.</p>
+
+<p>Di dalam kasus janin yang berstatus yahudi atau nasrani, wajib membayar ghurrah dengan ukuran sepertiga dari ghurrah-nya janin muslim, yaitu satu lebih dua pertiga ekor onta.</p>
+
+
+</p>
+
+<b><u>Catatan:</u></b><br/>
+<phr>
+<p><sub>1</sub>Khunsa dalam istilah syariah adalah orang yang punya dua alat kelamin, wanita dan pria; atau orang yang tidak punya alat kelamin sama sekali namun punya lubang untuk kencing. Khunsa ada dua yaitu:<br/>
+<ol type="a">
+<li>Khunsa musykil yaitu orang yang punya alat kelamin ganda dan tidak jelas tanda laki-laki atau perempuan, juga tidak diketahui apakah dia lelaki atau wanita, atau tandanya berlawanan. Dalam istilah keilmuan disebut hormon ganda/sindrom mullerian (Mullerian Syndrome).</li><br/>
+
+<li>Khuntsa ghairu musykil adalah orang punya kelamin ganda tapi jelas tanda laki-laki atau perempuan. Ia disebut laki-laki yang punya kelamin vagina tambahan; atau perempuan yang punya penis tambahan. Adapun hukumnya secara syariah dalam segi warisan adalah berdasarkan pada tanda yang dominan. Dalam istilah medis disebut Guevedoces.</li>
+</ol>
+
+
+
+</p>
+</phr>
+
+
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="1.html">
+	<svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 2</font>
+	</a>
+	
+	<a href="3.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>

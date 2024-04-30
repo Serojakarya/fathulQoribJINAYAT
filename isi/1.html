@@ -1,0 +1,610 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+	<script src="js/j.js" type="text/javascript">
+	</script><script src="js/s.js" type="text/javascript"></script>
+	  <link rel="stylesheet" type="text/css" href="css/jquery.mobile.squareui.css" />
+  <script src="js/jquery.js"></script>
+
+
+
+<style>
+
+#t {
+    text-align: justify;
+    line-height: 1.5;
+    border-style: solid;
+    border-width: 0px;
+    border-color: #000 #000;
+    font-size: 16px;
+    background-color: #ffffff;
+    border-radius: 0px;
+	font-size: 17px;
+    padding: 8px 3px 8px 3px;
+    background-image: "gambar/paper.png"
+	font-family: "Trebuchet MS, Helvetica, sans-serif"
+}
+
+#t h1 {
+	position: fixed;
+	top: -1px;
+	right: 0px;
+	width: 100%;
+	padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+	color: #F6B02E;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #F6B02E;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+
+#t h3 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 17px;
+	color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #0A3158;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "arial"
+	
+}
+
+
+
+#t h2 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+    font-family: "georgia"
+}
+
+#t h4 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-style: solid;
+    border-bottom: double #666;
+    border-top: double;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: none;
+    border-radius: 0px;
+    line-height: 1;
+}
+
+.arab {
+    font-size: 25px!important;
+    line-height: 46px!important;
+    font-family: "Times New Roman", Tahoma, sans-serif;
+    font-weight: normal;
+    text-align: right;
+    direction: rtl;
+}
+
+.my-wrapper {
+    padding-top: 30px;
+}
+
+.my-wrapper form {
+    position: fixed;
+    top: 0px;
+    left: 15px;
+    min-width: 95%;
+	padding-right: 25px;
+    z-index: 2;
+}
+
+.wrap {
+    white-space: normal !important;
+}
+
+p {
+    text-indent: 0%;
+}
+
+.c {
+    text-align: center;
+}
+
+.effect8 {
+    position: relative;
+    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.effect8:before,
+.effect8:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    -moz-border-radius: 100px / 10px;
+    border-radius: 100px / 10px;
+}
+
+.effect8:after {
+    right: 10px;
+    left: auto;
+    -webkit-transform: skew(8deg) rotate(3deg);
+    -moz-transform: skew(8deg) rotate(3deg);
+    -ms-transform: skew(8deg) rotate(3deg);
+    -o-transform: skew(8deg) rotate(3deg);
+    transform: skew(8deg) rotate(3deg);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+	max-width: 100%;
+	vertical-align: middle;
+	horizontal-align: left;
+	height: auto;
+	
+}
+
+
+.image {
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+	position:absolute;
+    top:0;
+    bottom:0;
+	left:5px;
+    margin:auto;
+}
+
+@media screen and (max-width: 640px) {
+    table {
+        overflow-x: auto;
+        display: block;
+	
+    }
+	
+	
+	td, th {
+  border: 1px solid #999;
+  padding: 0.3rem;
+}
+}
+
+
+
+
+.wrap2 {
+    white-space: normal !important;
+	text-align: right;
+}
+
+
+    pre {
+        font-family: "Courier 10 Pitch", Courier, monospace;
+        font-size: 95%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+		background: #f6f6f6;
+    }       
+    
+    code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 85%;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #faf8f0;
+    }
+    
+    #content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+    }
+	
+	
+	phr {
+		color:#918e8f;
+		font-size:17px;
+		
+	}
+
+	pnt {
+		color:black;
+		font-size:14px;
+		font-style: italic;
+	}
+	
+	
+
+
+</style>
+
+<style>
+
+
+.bottom-nav {
+   
+    padding: 10px;
+    background-color: #0A3158;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+	margin-top: -20px;
+    margin-right: -20px;
+    margin-bottom: -5px;
+    margin-left: -20px;
+
+}
+
+.bottom-link-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.bottom-nav a {
+    color: #F6B02E;
+    cursor: pointer;
+}
+
+.bottom-nav a svg {
+    width: 20px;
+}
+
+.bottom-nav a:nth-child(3) {
+    transform: scale(1.5) translateY(-10px);
+    background-color: #0A3158;
+    border-radius: 1000px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #F6B02E;
+    color: #F6B02E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+    .bottom-nav {
+        width: 100%;
+        bottom: 0%;
+        left: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        -webkit-transform: translate(-50%,0%);
+           -moz-transform: translate(-50%,0%);
+            -ms-transform: translate(-50%,0%);
+             -o-transform: translate(-50%,0%);
+                transform: translate(-50%,0%);
+    }
+
+    .bottom-link-nav {
+        position: relative;
+        width: 450px;
+    }
+
+}
+</style>
+
+<style>
+    @font-face{;
+        font-family:"me_quran";
+        src:url("css/fonts/me_quran.ttf")
+    }
+    
+	 @font-face{;
+        font-family:"LPMQ_IsepMisbah";
+        src:url("LPMQ_IsepMisbah.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"Traditional Arabic";
+        src:url("font.ttf")
+    }
+	
+	 @font-face{;
+        font-family:"KFGQPC Uthman Taha Naskh Bold";
+        src:url("fonts.ttf")
+    }
+	
+	
+    .arab{font-family:me_quran; }
+    </style> 
+<body>
+
+
+</head>
+
+<body>
+
+<div data-role="page" id="eps1" data-theme="d">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false" data-theme="c">
+		</div><div data-role="content"><div id="t">
+		
+
+
+
+<div id="mnj" style="display: block; position: right;">
+<ul id="tejaul">
+    <li><a href="1.html">1. Kitab Hukum Jinayat (Pidana)</a></li>
+    <li><a href="2.html">2. Diyat (Denda Pidana Pembunuhan atau Penyerangan)</a></li>
+    <li><a href="3.html">3. Qasamah (Tuduhan Pelaku Pembunuhan)</a></li>
+
+
+
+</ul>
+
+</div>
+
+
+<h1>KITAB JINAYAT <br/>(HUKUM-HUKUM KRIMINAL)
+</h1><br/><br/>
+
+
+
+
+<div align="center" class="style6"><font size="4" face="LPMQ_IsepMisbah"><b>كتاب أحكام الجنايات</b></font></div>
+
+
+	
+
+<div align="center">
+	<hr size="2" width="100%" align="center"/>
+</div>
+
+
+<div align="justify" class="style6"><font size="5" face="KFGQPC Uthman Taha Naskh Bold">
+
+
+
+جمع جناية أعم من أن تكون قتلاً أو قطعاً أو جرحاً (القتل على ثلاثة أضرب) لا رابع لها (عمد محض) وهو مصدر عمد بوزن ضرب، ومعناه القصد (وخطأ محض وعمد خطأ) وذكر المصنف تفسير العمد في قوله (فالعمد المحض هو أن يعمد) الجاني (إلى ضربه) أي الشخص (بما) أي بشيء (يقتل غالباً) وفي بعض النسخ في الغالب (ويقصد) الجاني (قتله) أي الشخص (بذلك) الشيء وحينئذ (فيجب القود) أي القصاص (عليه) أي الشخص الجاني، وما ذكره المصنف من اعتبار قصد القتل ضعيف، والراجح خلافه ويشترط لوجوب القصاص في نفس القتيل، أو قطع أطرافه إسلام، أو أمان فيهدر الحربي والمرتد في حق المسلم. (فإن عفا عنه) أي عفا المجني عليه عن الجاني في صورة العمد المحض (وجبت) على القاتل (دية مغلظة حالة في مال القاتل) وسيذكر المصنف بيان تغليظها (والخطأ المحض أن يرمي إلى شيء) كصيد (فيصيب رجلاً فيقتله فلا قود عليه) أي الرامي (بل يجب عليه دية مخففة) وسيذكر المصنف بيان تخفيفها (على العاقلة مؤجلة) عليهم (في ثلاث سنين) يؤخذ آخر كل سنة منها قدر ثلث دية كاملة، وعلى الغني من العاقلة من أصحاب الذهب آخر كل سنة نصف دينار، ومن أصحاب الفضة ستة دراهم كما قاله المتولي وغيره، والمراد بالعاقلة عصبة الجاني إلا أصله وفرعه (وعمد الخطأ أن يقصد ضربه بما لا يقتل غالباً) كأن ضربه بعصا خفيفة (فيموت) المضروب (فلا قود عليه بل تجب دية مغلظة على العاقلة مؤجلة في ثلاث سنين) وسيذكر المصنف بيان تغليظها. ثم شرع المصنف في ذكر من يجب عليه القصاص المأخوذ من اقتصاص الأثر أي تتبعه لأن المجني عليه يتبع الجناية فيأخذ مثلها فقال
+<br/><br/>
+وشرائط وجوب القصاص- في القتل (أربعة) وفي بعض النسخ فصل وشرائط وجوب القصاص أربع: الأول (أن يكون القاتل بالغاً) فلا قصاص على صبي، ولو قال أنا الآن صبي صدق بلا يمين. الثاني أن يكون القاتل (عاقلاً) فيمتنع القصاص من مجنون إلا أن تقطع جنونه، فيقتص منه زمن إفاقته، ويجب القصاص على من زال عقله بشرب مسكر متعد في شربه، فخرج من لم يتعد بأن شرب شيئاً ظنه غير مسكر فزال عقله، فلا قصاص عليه. (و) الثالث (أن لا يكون) القاتل (والداً للمقتول) فلا قصاص على والد بقتل ولده، وإن سفل الولد، قال ابن كج: ولو حكم حاكم بقتل والد بولده نقض حكمه (و) الرابع (أن لا يكون المقتول أنقص من القاتل بكفر أو رق) فلا يقتل مسلم بكافر حربياً كان أو ذمياً أو معاهداً، ولا يقتل حر برقيق، ولو كان المقتول أنقص من القاتل بكبر أو صغر أو طول أو قصر مثلاً، فلا عبرة بذلك (وتقتل الجماعة بالواحد) إن كافأهم وكان فعل كل واحد منهم لو انفرد كان قاتلاً، ثم أشار المصنف لقاعدة بقوله (وكل شخصين جرى القصاص بينهما في النفس يجري بينهما في الأطراف) التي لتلك النفس فكما يشترط في القاتل كونه مكلفاً يشترط في القاطع لطرف كونه مكلفاً، وحينئذ فمن لا يقتل بشخص لا يقطع بطرفه
+<br/><br/>
+وشرائط وجوب القصاص في الأطراف بعد الشرائط المذكورة- في قصاص النفس (اثنان) أحدهما (الاشتراك في الاسم الخاص) للطرف المقطوع وبينه المصنف بقوله (اليمنى باليمنى) أي تقطع اليمنى مثلاً من أذن أو يد أو رجل باليمنى من ذلك (واليسرى) مما ذكر (باليسرى) مما ذكر وحينئذ فلا تقطع يمنى بيسرى ولا عكسه (و) الثاني (أن لا يكون بأحد الطرفين شلل) فلا تقطع يد أو رجل صحيحة بشلاء. وهي التي لا عمل لها أما الشلاء فتقطع بالصحيحة على المشهور، إلا أن يقول عدلان من أهل الخبرة إن الشلاء إذا قطعت لا ينقطع الدم، بل تنفتح أفواه العروق، ولا تنسد بالجسم، ويشترط مع هذا أن يقنع بها مستوفيها، ولا يطلب أرشاً للشلل. ثم أشار المصنف لقاعدة بقوله (وكل عضو أخذ) أي قطع (من مفصل) كمرفق وكوع (ففيه القصاص) وما لا مفصل له لا قصاص فيه. واعلم أن شجاج الرأس والوجه عشرة حارصة بمهملات وهي ما تشق الجلد قليلاً ودامية تدميه، وباضعة تقطع اللحم ومتلاحمة تغوص فيه. وسمحاق تبلغ الجلدة التي بين اللحم والعظم، وموضحة توضح العظم من اللحم وهاشمة تكسر العظم سواء أوضحته أم لا، ومنقلة تنقل العظم من مكان إلى مكان آخر ومأمومة تبلغ خريطة الدماغ المسماة أم الرأس، ودامغة بغين معجمة تخرق تلك الخريطة وتصل إلى أم الرأس، واستثنى المصنف من هذه العشرة ما تضمنه قوله (ولا قصاص في الجروح) أي المذكورة (إلا في الموضحة) فقط لا في غيرها من بقية العشرة.
+
+
+
+</font></div>
+<hr><br/>
+
+
+
+<b><center>Pengertian Jinayat</b></center>
+
+<p>Jinayat yang menjadi bentuk jama’ dari lafadz “jinayah” mencakup pada bentuk membunuh, memotong anggota badan atau melukai.</p><br/>
+
+<b><center>Macam-Macam Pembunuhan</b></center>
+
+<p>Pembunuhan ada tiga macam, tidak ada yang ke empat.</p>
+
+<p>-pertama- pembunuhan ‘amdun mahdun (murni sengaja). Lafadz ‘amdun adalah bentuk masdar dari fi’il madli “’amida” satu wazan dengan lafadz “dlaraba”, dan maknanya adalah sengaja.</p>
+
+<p>-kedua dan ketiga- khatha’ mahdlun (murni tidak sengaja), dan ‘amdun khatha’ (sengaja namun salah).</p>
+
+<p>Mushannif menjelaskan tafsiran al ‘amdu di dalam perkataan beliau,</p><br/>
+
+<b><center>‘Amdun Mahdun</b></center>
+
+<p>Al ‘amdu al mahdu adalah pelaku sengaja memukul korban dengan menggunakan sesuatu yang biasanya bisa membunuh.</p>
+
+<p>Dalam sebagian redaksi menggunakan bahasa, “di dalam kebiasaannya.”</p>
+
+<p>Dan pelaku sengaja untuk membunuh korban dengan sesuatu tersebut.</p>
+
+<p>Dan ketika demikian, maka sang pelaku wajib di-qishash.</p>
+
+<p>Penjelasan mushannif bahwa harus mempertimbangkan kesengajaan untuk membunuh adalah pendapat yang lemah. Sedangkan pendapat yang kuat adalah tidak perlu ada kesengajaan untuk membunuh.</p>
+
+<p>Penetapan qishash disyaratkan bahwa orang yang terbunuh atau terpotong anggota badannya harus islam atau memiliki ikatan aman.</p>
+
+<p>Sehingga untuk kafir harbi dan orang murtad, maka tidak ada kewajiban qishash ketika dibunuh oleh orang islam.</p>
+
+<p>Kemudian, jika korban memaafkan pelaku di dalam kasus ‘amdun mahdlun, maka pembunuh wajib membayar diyat mughaladhah (yang diberatkan) dengan seketika dan diambilkan dari harta si pembunuh.</p>
+
+<p>Mushannif akan menyebutkan tentang penjelasan taghlidh diyat tersebut,</p><br/>
+
+<b><center>Khatha’ Mahdun</b></center>
+
+<p>Khatha’ mahdlun adalah seseorang melempar sesuatu seperti binatang buruan, namun kemudian mengenai seorang laki-laki hingga menyebabkan meninggal dunia.</p>
+
+<p>Maka tidak ada kewajiban qishash bagi orang yang melempar, akan tetapi ia wajib membayar diyat mukhaffafah (yang diringankan) yang dibebankan kepada ahli waris ashabah si pelaku dengan cara ditempo selama tiga tahun. Dan mushannif akan menyebutkan penjelasannya,</p>
+
+<p>Setiap satu tahun dari masa itu diambil kira-kira sepertiga dari seluruh diyat.</p>
+
+<p>Bagi waris ashabah yang kaya dan memiliki emas, maka setiap akhir tahun wajib membayar setengah dinar. Dan bagi yang memiliki perak wajib membayar enam dirham sebagaimana yang telah jelaskan oleh imam al mutawalli dan yang lain.</p>
+
+<p>Yang dikehendaki dengan al ‘aqilah adalah ahli waris ashabah si pelaku, bukan orang tua atau anak-anaknya.</p><br/>
+
+<b><center>‘Amdul Khatha’</b></center>
+
+<p>‘Amdul Khatha’ adalah pelaku sengaja memukul korban dengan menggunakan sesuatu yang biasanya tidak sampai membunuh seperti si pelaku memukul korban dengan tongkat yang ringan, namun kemudian korban yang dipukul meninggal dunia.</p>
+
+<p>Maka tidak ada kewajiban had atas si pelaku, akan tetapi wajib membayar diyat mughalladhah (diberatkan) yang dibebankan kepada waris ‘aqilah si pelaku dengan cara ditempo selama tiga tahun. Dan mushannif akan menyebutkan penjelasan sisi berat diyat tersebut.</p>
+
+<p>Kemudian mushannif beranjak menjelaskan tentang orang yang berhak mendapatkan qishash. Qishash diambil dari iqtishashul atsar yang bermakna meneliti jejak, karena sesugguhnya (keluarga) korban akan meneliti kasus kriminal kemudian akan mengambil balasan sepadannya. Mushannif berkata,</p><br/>
+
+<b><center>Syarat Kewajiban Qishah</b></center>
+
+<p>Syarat kewajiban qishash dalam kasus pembunuhan ada empat.</p>
+
+<p>Di dalam sebagian redaksi dengan menggunakan bahasa, “(fasal) syarat-syarat wajibnya qishash ada empat.”</p>
+
+<p><i><b>Pertama,</i></b> si pembunuh sudah baligh. Sehingga tidak ada kewajiban qishash atas anak kecil.</p>
+
+<p>Seandainya si pembunuh berkata, “saya saat ini masih bocah (belum baligh)”, maka ia dibenarkan tanpa harus bersumpah.</p>
+
+<p><i><b>Kedua,</i></b> si pembunuh adalah orang yang berakal.</p>
+
+<p>Sehingga qishash tidak boleh dilakukan pada orang gila kecuali gilanya terputus-putus, maka dia diqishash pada waktu sembuh.</p>
+
+<p>Qishash wajib dilaksanakan pada orang yang hilang akalny sebab meminum minumam memabukkan akibat kecorobohan saat meminumnya.</p>
+
+<p>Maka mengecualikan orang yang tidak ceroboh, seperti ia meminum sesuatu yang ia kira tidak memabukkan, namun ternyata kemudian akalnya hilang, maka tidak ada kewajiban qishash atas dirinya.</p>
+
+<p><i><b>Ketiga,</i></b> si pembunuh bukan orang tua korban yang dibunuh.</p>
+
+<p>Maka tidak ada kewajiban qishash atas orang tua yang membunuh anaknya sendiri, walaupun anak hingga ke bawah (cucu).</p>
+
+<p>Ibn Kajj berkata, “seandainya seorang hakim memutuskan menghukum mati orang tua yang telah membunuh anaknya, maka putusan hukum hakim tersebut batal.”</p>
+
+<p><i><b>Keempat,</i></b> korban yang terbunuh statusnya tidak sebawah status si pembunuh, sebab kafir atau status budak.</p>
+
+<p>Sehingga orang muslim tidak boleh dihukum mati sebab membunuh orang kafir harbi, dzimmi atau kafir mu’ahhad.</p>
+
+<p>Orang merdeka tidak boleh dihukum mati sebab membunuh seorang budak.</p>
+
+<p>Seandainya korban yang terbunuh memiliki nilai kekurangan dibanding dengan si pembunuh sebab tua, kecil, tinggi, atau pendek semisal, maka semua itu tidaklah dianggap.</p>
+
+<p>Sekelompok orang wajib dihukum mati sebab membunuh satu orang, jika satu orang tersebut sepadan dengan status para pembunuhnya, dan perbuatan masing-masing dari mereka seandainya hanya sendirian niscaya akan bisa membunuh si korban.</p>
+
+<p>Kemudian mushannif memberi isyarah satu bentuk kaidah dengan perkataan beliau,</p>
+
+<p>Setiap dua orang yang bisa terlaku hukum qishash di antara keduanya dalam kasus pembunuhan, maka hukum qishash-pun terlaku di antara keduanya dalam kasus pemotongan anggota badan.</p>
+
+<p>Sebagaimana disyaratkan orang yang membunuh harus mukallaf, orang yang memotong anggota badan juga disyaratkan harus mukkalaf.</p>
+
+<p>Kalau demikian, orang yang tidak dihukum mati sebab membunuh seseorang, maka tidak berhak dihukum potong sebab memotong anggota orang tersebut.</p><br/>
+
+<b><center>Syarat Hukum Potong Anggota Badan</b></center>
+
+<p>Syarat wajibnya qishash di dalam kasus memotong anggota badan ada dua, setelah mempertimbangkan juga syarat-syarat yang disebutkan di dalam qishash pembunuhan.</p>
+
+<p><i><b>Pertama</i></b> adalah isytirak (sama) di dalam nama khusus bagi anggota yang dipotong.</p>
+
+<p>Mushannif menjelaskan hal itu dengan perkataan beliau, “ anggota sebelah kanan dipotong sebab anggota yang kanan juga, maksudnya anggota sebelah kanan semisal telinga, tangan, atau kaki harus dipotong sebab memotong sebelah kanan dari anggota-anggota badan tersebut. Dan bagian kiri dari anggota-anggota badan itu berhak dipotong sebab memotong bagian kiri dari anggota-anggota badan tersebut.</p>
+
+<p>Kalau demikian, maka anggota sebelah kanan tidak boleh dipotong sebab telah memotong anggota sebelah kiri, dan tidak boleh juga sebaliknya.</p>
+
+<p><i><b>Kedua,</i></b> salah satu dari dua anggota yang dipotong tidak bermasalah (masih berfungsi).</p>
+
+<p>Sehingga tangan atau kaki yang sehat tidak boleh dipotong sebab memotong tangan atau kaki yang syala’. Anggota yang syala’ adalah anggota badan yang sudah tidak berfungsi.</p>
+
+<p>Adapun anggota badan yang syala’ berhak dipotong sebab memotong anggota yang sehat menurut pendapat al masyhur.</p>
+
+<p>Kecuali jika ada dua orang adil dari ahli khubrah (pakar ahli) yang berkata bahwa sesungguhnya anggota yang tidak berfungsi tersebut ketika dipotong maka darahnya tidak akan berhenti, bahkan ujung-ujung urat akan terbuka dan tidak bisa tertutup dengan di cos.</p>
+
+<p>Di samping hal ini, orang yang berhak atas anggota tersebut mau menerima dan tidak menuntut ganti rugi karena cacatnya anggota tersebut.</p>
+
+<p>Kemudian mushannif memberi isyarah suatu bentuk kaidah dengan perkataan beliau,</p>
+
+<p>Setiap anggota badan yang bisa diambil, maksudnya dipotong dari persendian seperti siku dan pergelangan tangan, maka pada anggota tersebut berlaku hukum qishash.</p>
+
+<p>Sedangkan anggota yang tidak memiliki persendian, maka tidak berlaku hukum qishash pada anggota badan tersebut.</p><br/>
+
+<b><center>Luka di Wajah dan Kepala</b></center>
+
+<p>Ketahuilah sesungguhnya luka di kepala dan wajah ada sepuluh macam.</p>
+
+<p>Harishah dengan menggunakan huruf-huruf yang tidak memiliki titik. Harishah adalah luka yang menyobek kulit sedikit.</p>
+
+<p>Damiyah, yaitu luka yang mengeluarkan darah di kulit.</p>
+
+<p>Badi’ah, adalah luka yang hingga memotong daging.</p>
+
+<p>Mutalahimah, yaitu luka yang hingga masuk ke dalam daging.</p>
+
+<p>Simhaq, yaitu luka yang sampai hingga ke kulit diantara daging dan tulang.</p>
+
+<p>Mudlihah, yaitu luka yang hingga menampakkan tulang yang berada di balik daging.</p>
+
+<p>Hasyimah, yaitu luka yang hingga memecahkan tulang, baik sampai menampakkan tulang ataupun tidak.</p>
+
+<p>Munaqqilah, yaitu luka yang memindahkan posisi tulang dari satu tempat ke tempat yang lain.</p>
+
+<p>Ma’munah, yaitu luka yang sampai ke kantong otak yang disebut dengan ummu ra’s (pusat kepala).</p>
+
+<p>Damighah dengan huruf ghin yang diberi titik satu di atasnya, yaitu luka yang sampai membenyobek kantong otak tersebut dan sampai hingga ke ummu ra’s.</p>
+
+<p>Dari sepuluh bentuk luka ini, mushannif mengecualikan apa yang terangkum di dalam perkataan beliau,</p>
+
+<p>Tidak ada hukum qishash di dalam kasus luka, maksudnya luka-luka yang telah disebutkan di atas, kecuali luka mudlihah saja, tidak yang lainya dari sepuluh luka tersebut.</p>
+
+
+
+
+</p>
+
+
+
+<br/>
+
+  <div class="bottom-nav">
+    <div class="bottom-link-nav"> 
+    <a href="../index.html">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
+    </a>
+
+    <a href="">
+
+    <path fill="currentColor" d="M18,11V13H10L13.5,16.5L12.08,17.92L6.16,12L12.08,6.08L13.5,7.5L10,11H18M2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12M4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12Z" /></svg>
+    </a>
+	
+    <a href="">
+    <font size="2" > 1</font>
+	</a>
+	
+	<a href="2.html">
+      <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M6,13V11H14L10.5,7.5L11.92,6.08L17.84,12L11.92,17.92L10.5,16.5L14,13H6M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12Z" /></svg>
+    </a>
+	
+    <a href="#" id="tmnj">
+     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+    </a>
+	
+
+    </div>
+
+
+</body>
+</html>
+
+
